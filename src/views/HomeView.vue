@@ -105,17 +105,19 @@
         <v-img max-width="1920px" max-height="400px" src="https://i.pinimg.com/564x/05/f9/9e/05f99e38ef628533087e6bec49f95e8f.jpg"></v-img>
       </div>
     </v-container>
+
     <hr style="margin-bottom: 30px" />
-    <!--part 5-->
-    <v-container class="white--text" style="padding-top: 70px">
-      <div class="d-flex align-center justify-center">
+
+  <!--part 5-->
+    <v-container class="white--text" style="padding-top: 30px">
+      <div class="align-center justify-center">
         <h1 class="overline text-lg-h5">Gallery</h1>
       </div>
       <v-row style="padding-top: 30px">
         <v-col
           v-for="img in imgs"
           :key="img.id"
-          class="d-flex child-flex"
+          class="child-flex"
           cols="3"
         >
           <v-img :src="img.src" aspect-ratio="1" class="grey lighten-2">
