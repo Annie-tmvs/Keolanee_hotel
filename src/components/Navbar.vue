@@ -28,19 +28,19 @@
         <v-spacer></v-spacer>
 
         <router-link style="color: white;" class="text-md-body-2" to="/"
-          >ໜ້າຫຼັກ</router-link
+          ><span>ໜ້າຫຼັກ</span></router-link
         >
         <router-link style="color: white" class="text-md-body-2" to="/room"
-          >ຫ້ອງພັກ</router-link
+          ><span>ຫ້ອງພັກ</span></router-link
         >
         <router-link style="color: white" class="text-md-body-2" to="/info"
-          >ຂໍ້ມູນໂຮງແຮມ</router-link
+          ><span>ຂໍ້ມູນໂຮງແຮມ</span></router-link
         >
         <router-link style="color: white" class="text-md-body-2" to="/faq"
-          >ຊ່ວຍເຫຼືອ</router-link
+          ><span>ຊ່ວຍເຫຼືອ</span></router-link
         >
         <router-link style="color: white" class="text-md-body-2" to="/about"
-          >ສະມັກສະມາຊິກ</router-link
+          ><span>ສະມັກສະມາຊິກ</span></router-link
         >
       </v-app-bar>
     </nav>
@@ -60,11 +60,9 @@ nav {
     padding: 15px;
   }
 }
-*{
-  font-family: 'Noto Sans Lao', sans-serif;
-}
-*{
-  font-family: 'Rubik Marker Hatch', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap");
+* {
+  font-family: "Noto Sans Lao", sans-serif;
 }
 </style>
 
