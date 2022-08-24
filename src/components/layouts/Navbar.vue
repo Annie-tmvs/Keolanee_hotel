@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="dark--text body ">
+    <nav class="dark--text body">
       <v-app-bar
         app
         absolute
@@ -9,25 +9,30 @@
         style="padding: 0px 50px"
         tile
       >
-        <v-toolbar-title
-          class="text-uppercase d-flex align-center"
-          style="color: white"
+        <router-link
+          style="color: black"
+          class="text-decoration-none"
+          to="/"
         >
-          <img
-            alt="logo"
-            v-for="(img, i) in imgs"
-            :key="i"
-            :src="img.src"
-            contain
-            width="50px"
-            class="ma-3"
-          />
-          Keolanee Hotel
-        </v-toolbar-title>
-
+          <v-toolbar-title
+            class="text-uppercase d-flex align-center"
+            style="color: white"
+          >
+            <img
+              alt="logo"
+              v-for="(img, i) in imgs"
+              :key="i"
+              :src="img.src"
+              contain
+              width="50px"
+              class="ma-3"
+            />
+            Keolanee Hotel
+          </v-toolbar-title>
+        </router-link>
         <v-spacer></v-spacer>
 
-        <router-link style="color: white;" class="text-md-body-2" to="/"
+        <router-link style="color: white" class="text-md-body-2" to="/"
           ><span>ໜ້າຫຼັກ</span></router-link
         >
         <router-link style="color: white" class="text-md-body-2" to="/room"
@@ -39,7 +44,7 @@
         <router-link style="color: white" class="text-md-body-2" to="/faq"
           ><span>ຊ່ວຍເຫຼືອ</span></router-link
         >
-        <router-link style="color: white" class="text-md-body-2" to="/about"
+        <router-link style="color: white" class="text-md-body-2" to="/login"
           ><span>ສະມັກສະມາຊິກ</span></router-link
         >
       </v-app-bar>
